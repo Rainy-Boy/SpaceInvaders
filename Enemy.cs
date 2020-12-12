@@ -8,7 +8,7 @@ using System.Drawing;
 
 namespace SpaceInvaders
 {
-    //changes
+    //changes and stuff
     class Enemy : PictureBox
     {
         public Enemy()
