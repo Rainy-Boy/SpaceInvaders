@@ -13,7 +13,6 @@ namespace SpaceInvaders
     public partial class Game : Form
     {
         private Spaceship spaceship = null;
-        private Bullet bullet = null;
 
         public Game()
         {
@@ -24,10 +23,14 @@ namespace SpaceInvaders
         private void InitializeGame()
         {
             this.KeyDown += Game_KeyDown;
-
             this.BackColor = Color.Black;
-            
-            spaceship = new Spaceship();
+            AddSpaceship();
+        }
+
+        private void AddSpaceship()
+        {
+            spaceship = new Spaceship(this);
+            spaceship.FireCooldown = 500;
             this.Controls.Add(spaceship);
             spaceship.Left = 250;
             spaceship.Top = ClientRectangle.Height - spaceship.Height;
@@ -37,17 +40,22 @@ namespace SpaceInvaders
         {
             if(e.KeyCode == Keys.Space)
             {
-                FireBullet();
+                spaceship.Fire();
+            }
+            else if (e.KeyCode == Keys.A)
+            {
+                spaceship.HorVelocity = -2;
+            }
+            else if (e.KeyCode == Keys.D)
+            {
+                spaceship.HorVelocity = 2;
+            }
+            else if (e.KeyCode == Keys.S)
+            {
+                spaceship.HorVelocity = 0;
             }
         }
 
-        private void FireBullet()
-        {
-            bullet = new Bullet();
-            bullet.Left = spaceship.Left + 20;
-            bullet.Top = spaceship.Top - bullet.Height;
-            this.Controls.Add(bullet);
-        }
-
+       
     }
 }
