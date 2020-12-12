@@ -49,6 +49,9 @@
     <Compile Include="Bullet.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Enemy.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>

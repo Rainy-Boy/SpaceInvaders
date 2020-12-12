@@ -65,11 +65,26 @@ namespace SpaceInvaders
             timerMove = new Timer();
             timerMove.Interval = 10;
             timerMove.Tick += TimerMove_Tick;
+            timerMove.Start();
         }
 
         private void TimerMove_Tick(object sender, EventArgs e)
         {
             this.Left += this.HorVelocity;
+            CheckLocation();
         }
+
+        private void CheckLocation()
+        {
+            if(this.Left <= 0)
+            {
+                this.HorVelocity = 0;
+            }
+            else if(this.Left + this.Width >= game.ClientRectangle.Width)
+            {
+                this.HorVelocity = 0;
+            }
+        }
+
     }
 }
