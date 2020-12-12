@@ -78,11 +78,11 @@ namespace SpaceInvaders
         {
             if(this.Left <= 0)
             {
-                this.HorVelocity = 0;
+                this.HorVelocity = -this.HorVelocity;
             }
             else if(this.Left + this.Width >= game.ClientRectangle.Width)
             {
-                this.HorVelocity = 0;
+                this.HorVelocity = -this.HorVelocity;
             }
         }
 
