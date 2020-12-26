@@ -12,9 +12,11 @@ namespace SpaceInvaders
     {
         private Timer explosionTimer = null;
         private int imageCount = 0;
+        private Game game = null;
 
-        public Enemy()
+        public Enemy(Game gameForm)
         {
+            game = gameForm;
             InitializeEnemy();
             
         }
@@ -57,6 +59,7 @@ namespace SpaceInvaders
                 explosionTimer.Stop();
                 explosionTimer.Dispose();
                 this.Top = 0;
+                game.Controls.Remove(this);
                 this.Dispose();
             }
         }

@@ -48,7 +48,7 @@ namespace SpaceInvaders
             {
                 for (int i = 0; i < columns; i++)
                 {
-                    enemy = new Enemy();
+                    enemy = new Enemy(this);
                     enemy.Left = 60 + i * 60;
                     enemy.Top = 10 + 60 * j;
                     this.Controls.Add(enemy);
@@ -99,13 +99,12 @@ namespace SpaceInvaders
                     if (bullet.Bounds.IntersectsWith(enemy.Bounds))
                     {
                         enemy.Explode();
-                        
 
+                        this.Controls.Remove(bullet);
                         bullet.Dispose();
                         
-
                         bullet.Top = 0;
-                        enemy.Top = 0;
+                        
                     }
                 }
             }
