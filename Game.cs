@@ -98,10 +98,11 @@ namespace SpaceInvaders
                 {
                     if (bullet.Bounds.IntersectsWith(enemy.Bounds))
                     {
-                        this.Controls.Remove(enemy);
-                        enemy.Dispose();
-                        this.Controls.Remove(bullet);
+                        enemy.Explode();
+                        
+
                         bullet.Dispose();
+                        
 
                         bullet.Top = 0;
                         enemy.Top = 0;
