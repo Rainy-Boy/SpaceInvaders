@@ -58,6 +58,7 @@ namespace SpaceInvaders
             bullets.Add(bullet);
             canFire = false;
             InitializeTimerCooldown();
+            
 
         }
 
@@ -99,6 +100,11 @@ namespace SpaceInvaders
             {
                 this.HorVelocity = -this.HorVelocity;
             }
+        }
+
+        private void SpaceShipAnimation()
+        {
+
         }
 
     }

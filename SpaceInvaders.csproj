@@ -74,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +88,99 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket_off_000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket_off_001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket_off_002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket_off_003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket_on_000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket_on_001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket_on_002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket_on_003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp015.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp017.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp018.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp019.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp020.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp021.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp012.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exp014.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
